@@ -8,9 +8,7 @@ function PlatformSelector({selectedPlatforms, onPlatformToggle}) {
             {['TikTok', 'YouTube'].map(platform => (
                 <div
                     key={platform}
-                    style='box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-                       transition: box-shadow 0.3s ease-in-out;'
-                    className={`${selectedPlatforms[platform] ? 'selected' : ''}`}
+                    className={`link-block w-inline-block ${selectedPlatforms[platform] ? 'selected' : ''}`}
                     onClick={() => onPlatformToggle(platform)}
                     role="button"
                     tabIndex="0"
