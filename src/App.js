@@ -2,11 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import './css/formation-4140cf.webflow.css';
 import './css/normalize.css';
-//import './css/webflow.css';
-import tikTokImage from "./tiktok.svg";
-//import SliderBar from './Slider';
-import PlatformSelector from './PlatformSelector';
+import OutreachGoals from './dropdown';
 import MathComponent from './MathComp';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TargetAudiences from "./targetAudiences";
 
 function App() {
     return (
@@ -25,12 +24,14 @@ function App() {
                         <h2 className="heading-4">Outreach Goals</h2>
                         <p className="paragraph-2">Select the desired outreach goal for your influencer marketing
                             campaign</p>
+                        <div className={"max-w-500px"}><OutreachGoals/></div>
                     </div>
                     <div className="target-audiences">
                         <h2 className="heading-4">Target Audiences</h2>
                         <p className="paragraph-2">Define your target audience for the influencer marketing
                             campaign.</p>
                     </div>
+                    <TargetAudiences></TargetAudiences>
                 </div>
             </section>
         </div>
