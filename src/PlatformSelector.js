@@ -1,7 +1,6 @@
 import React from 'react';
 import tikTokImage from './tiktok.svg'; // Ensure this path is correct
 import youtubeImage from './youtube.svg'; // Ensure this path is correct and adjust if you have a different image for YouTube
-
 function PlatformSelector({selectedPlatforms, onPlatformToggle}) {
     return (
         <div className="div-block">
@@ -14,8 +13,8 @@ function PlatformSelector({selectedPlatforms, onPlatformToggle}) {
                     tabIndex="0"
                 >
                     <img src={platform === 'TikTok' ? tikTokImage : youtubeImage} loading="lazy" alt={platform}
-                         className="image"/>
-                    <h5 className="heading-5">{platform}</h5>
+                         className="image -mt-96"/>
+                    <h5 className="text-white">{platform}</h5>
                 </div>
             ))}
         </div>
