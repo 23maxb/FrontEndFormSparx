@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*slider*/
+.slider-container {
+  margin: 0px;
+  width: calc(100%); /* Adjust based on your container's padding/margin */
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #007bff; /* Blue background */
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #007bff; /* Blue background */
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+}
+
+/*selector*/
+
+.link-block.w-inline-block {
+  cursor: pointer;
+  transition: background-color 0.1s ease; /* Add filter transition */
+  background-color: black; /* Default color */
+  transform: scale(1);
+}
+
+/* Hover effect to change background to a lighter shade of black */
+.link-block.w-inline-block:hover {
+  background-color: #610707; /* Lighter shade of black for visible hover effect */
+}
+
+.selected {
+  background-color: rgb(204, 1, 1) !important; /* Selected state background color */
+  transform: scale(1.05)!important;
+}
